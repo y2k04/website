@@ -5,10 +5,8 @@
 body {
     display: flex;
     user-select: none;
-    background: none !important;
-    background-image: url("background.png") !important;
+    background: url("background.png") !important;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .blur {
