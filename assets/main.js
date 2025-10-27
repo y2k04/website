@@ -1,7 +1,3 @@
-function remToPx(rem) {    
-    return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
-}
-
 function changeOnSize() {
     if (document.body.clientWidth < 500)
         document.querySelector(".menu").className = document.querySelector(".menu").className.replace("vertical", "horizontal");
