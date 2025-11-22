@@ -6,7 +6,8 @@ body {
     display: flex;
     user-select: none;
     background: url("background.png") !important;
-    background-repeat: round !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
 .blur {
@@ -82,3 +83,4 @@ body {
     }
 
 }
+
