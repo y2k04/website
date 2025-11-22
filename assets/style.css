@@ -6,7 +6,7 @@ body {
     display: flex;
     user-select: none;
     background: url("background.png") !important;
-    background-repeat: no-repeat;
+    background-repeat: round !important;
 }
 
 .blur {
@@ -80,4 +80,5 @@ body {
     #home div.ui.segments {
         flex-direction: column;
     }
+
 }
