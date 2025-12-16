@@ -21,7 +21,7 @@ if (location.pathname == "/" || location.pathname.startsWith("/index")) {
     (async () => await fetch('https://api.github.com/users/y2k04/gists?per_page=5').then(r => r.json()).then(gists => {
         for (var i = 0; i < 5; i++) {
             var el = document.createElement("div");
-            el.innerHTML = `<div class="content"><a class="header" href="${gists[i].url}">${Object.keys(gists[i].files)[0]}</a><div class="description">${gists[i].description}</div></div>`;
+            el.innerHTML = `<div class="content"><a class="header" href="${gists[i].html_url}">${Object.keys(gists[i].files)[0]}</a><div class="description">${gists[i].description}</div></div>`;
             el.className = "item";
             document.getElementById("latestGists").appendChild(el);
         }
