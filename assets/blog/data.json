@@ -3,7 +3,8 @@
         {
             "name": "MIDI to micro:bit Converter",
             "date": "18/09/2020",
-            "image": "assets/blog/resources/0/image.png",
+            "image": "/assets/blog/resources/0/image.png",
+            "description": "A writeup of a project I have worked on.",
             "content": [
                 "<i>Note: This post used to be on my WordPress website (which I had abandoned XD).</i><br>",
                 "So, this program literally only took less than a week to create so it's okay I guess, not perfect, but does the job though. The converter grabs every MIDI note and converts it to a tone integer (in Hertz). At the bottom of this post, I will add a link to where you can find my C# tone dictionary, as well as a download link to the tool. The UI is like an installer, but it isn't. I thought it would be easier for the user in this format (information digestion), instead of getting blasted with information all at once, like <a href=\"https://rufus.ie\">Rufus</a>. I have simplified it down to the point where someone with no experience with a micro:bit can easily import a MIDI, convert it, paste the output code into the IDE and play the Simulator (or you could go a step further and export it to a physical micro:bit!).",

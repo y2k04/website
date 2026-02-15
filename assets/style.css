@@ -5,14 +5,14 @@
 body {
     display: flex;
     user-select: none;
-    background: url("background.png") !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background: linear-gradient(180deg, #c473f5 0%, #b257ec 14%, #c45fd5 28%, #cf5ec7 42%, #dd5ec0 56%, #ec71ba 70%, #fe90a6 84%, #f689a9 100%) !important;
 }
 
 .blur {
     background: rgba(24, 24, 24, 0.42) !important;
     backdrop-filter: blur(16px);
+    height: fit-content;
+    margin: 0 !important;
 }
 
 .menu {
@@ -44,20 +44,35 @@ body {
     color: #45a3ff !important;
 }
 
-#home {
+.main {
     margin: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-#home div.ui.segments {
+.main.blog {
+    max-height: 80%;
+    align-items: unset;
+    overflow-y: auto;
+}
+
+.main.blog div.ui.segment {
+    display: flex;
+    flex-direction: column;
+}
+
+.main.blog .header {
+    margin: 0;
+}
+
+.main div.ui.segments {
     box-shadow: none !important;
     border: none !important;
     width: 80vw;
+    min-height: 10vh;
 }
 
-#home div.ui.segment h3 {
+.main div.ui.segment h3 {
     text-align: center;
 }
 
@@ -74,11 +89,11 @@ body {
         top: 0;
     }
 
-    #home {
+    .main {
         margin-top: 10vh;
     }
 
-    #home div.ui.segments {
+    .main div.ui.segments {
         flex-direction: column;
     }
 

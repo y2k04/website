@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" href="/assets/favicon.png">
     <meta property="og:title" content="Y2K4">
     <meta property="og:image" content="/assets/favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@latest/dist/semantic.min.css">
     <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
@@ -17,26 +17,19 @@
         <a class="item" href="/blog">Blog</a>
         <a class="item" href="javascript:alert(`soon`)">About</a>
     </div>
-    <div id="home">
-        <div class="ui horizontal basic segments blur">
-            <div class="ui segment">
+    <div class="main">
+        <div class="ui horizontal basic grid segments blur">
+            <div class="ui column segment">
                 <h3>Latest Repos</h3>
                 <div id="latestRepos" class="ui relaxed divided list"></div>
             </div>
-            <div class="ui segment">
+            <div class="ui column segment">
                 <h3>Latest Gists</h3>
                 <div id="latestGists" class="ui relaxed divided list"></div>
             </div>
-            <div class="ui segment">
+            <div class="ui column segment">
                 <h3>Latest Blog Posts</h3>
-                <div id="latestPosts" class="ui relaxed divided list">
-                    <div class="item">
-                        <div class="content">
-                            <a class="header">Bingus</a>
-                            <div class="description">uwu</div>
-                        </div>
-                    </div>
-                </div>
+                <div id="latestPosts" class="ui relaxed divided list"></div>
             </div>
         </div>
     </div>
